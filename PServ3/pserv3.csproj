@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5932D64C-937B-429F-93BB-8EB70D8DB3DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pserv3</RootNamespace>
+    <AssemblyName>pserv3</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Table 1.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowseComputerName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseComputerName.Designer.cs">
+      <DependentUpon>BrowseComputerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseColumns.Designer.cs">
+      <DependentUpon>ChooseColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StandardColumn_UInt.cs" />
+    <Compile Include="StandardColumn_TimeSpan.cs" />
+    <Compile Include="StandardColumn_Long.cs" />
+    <Compile Include="StandardColumn_Int.cs" />
+    <Compile Include="EventJournal\EventJournalItemTypes.cs" />
+    <Compile Include="EventJournal\EventJournalObject.cs" />
+    <Compile Include="EventJournal\EventJournalController.cs" />
+    <Compile Include="IServiceView.cs" />
+    <Compile Include="LongTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LongTaskDialog.Designer.cs">
+      <DependentUpon>LongTaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModulesController.cs" />
+    <Compile Include="Modules\ModuleItemTypes.cs" />
+    <Compile Include="Modules\ModuleObject.cs" />
+    <Compile Include="Processes\ProcessItemTypes.cs" />
+    <Compile Include="Processes\ProcessObject.cs" />
+    <Compile Include="Processes\ProcessesController.cs" />
+    <Compile Include="Services\ApplyTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\ApplyTemplate.Designer.cs">
+      <DependentUpon>ApplyTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ChangeServiceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\ChangeServiceStatus.Designer.cs">
+      <DependentUpon>ChangeServiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="IServiceColumn.cs" />
+    <Compile Include="IServiceController.cs" />
+    <Compile Include="IServiceObject.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BrowseComputerName.resx">
+      <DependentUpon>BrowseComputerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseColumns.resx">
+      <DependentUpon>ChooseColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LongTaskDialog.resx">
+      <DependentUpon>LongTaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\ApplyTemplate.resx">
+      <DependentUpon>ApplyTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\ChangeServiceStatus.resx">
+      <DependentUpon>ChangeServiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\ServiceProperties.resx">
+      <DependentUpon>ServiceProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uninstaller\UninstallerProperties.resx">
+      <DependentUpon>UninstallerProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\ServiceActionTemplate.cs" />
+    <Compile Include="Services\ServiceProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\ServiceProperties.Designer.cs">
+      <DependentUpon>ServiceProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.cs" />
+    <Compile Include="Uninstaller\UninstallerItemTypes.cs" />
+    <Compile Include="Uninstaller\UninstallerObject.cs" />
+    <Compile Include="Uninstaller\UninstallerController.cs" />
+    <Compile Include="Uninstaller\UninstallerProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uninstaller\UninstallerProperties.Designer.cs">
+      <DependentUpon>UninstallerProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\WindowObject.cs" />
+    <Compile Include="Windows\WindowItemTypes.cs" />
+    <Compile Include="Windows\WindowsController.cs" />
+    <Compile Include="Services\DevicesController.cs" />
+    <Compile Include="Services\NativeSCManager.cs" />
+    <Compile Include="Services\NativeService.cs" />
+    <Compile Include="Services\NativeServiceFunctions.cs" />
+    <Compile Include="Services\RequestServiceContinue.cs" />
+    <Compile Include="Services\RequestServicePause.cs" />
+    <Compile Include="Services\RequestServiceRestart.cs" />
+    <Compile Include="Services\RequestServiceShutdown.cs" />
+    <Compile Include="Services\RequestServiceStartup.cs" />
+    <Compile Include="Services\ServiceItemTypes.cs" />
+    <Compile Include="Services\ServiceObject.cs" />
+    <Compile Include="Services\ServicesController.cs" />
+    <Compile Include="Services\ServiceStateRequest.cs" />
+    <Compile Include="Services\ServiceStatus.cs" />
+    <Compile Include="StandardColumn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GPrint\GPrint.csproj">
+      <Project>{2F333553-A452-4564-A725-7E1EDFFF259A}</Project>
+      <Name>GPrint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GSharpTools\GSharpTools.csproj">
+      <Project>{081FB1E5-8F19-4608-9092-42EE12BD5A38}</Project>
+      <Name>GSharpTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="create_csharp_strings.py" />
+    <Content Include="Strings.py" />
+    <Content Include="Strings.xml" />
+    <Content Include="Table 1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

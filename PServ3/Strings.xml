@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings language="english">
+
+
+  <!-- this is the configuration file that defines all strings available in a project. -->
+
+  <string
+    id="SERVICE_AUTO_START"
+    description="Service Object: Startup Type Automatic"
+    text="Automatic"/>
+
+  <string
+    id="SERVICE_BOOT_START"
+    description="Service Object: Startup Type At Boot"
+    text="Boot"/>
+
+  <string
+    id="SERVICE_DEMAND_START"
+    description="Service Object: Startup Type On Demand"
+    text="Manual"/>
+
+  <string
+    id="SERVICE_SYSTEM_START"
+    description="Service Object: Startup Type At System Startup"
+    text="System"/>
+
+  <string
+    id="SERVICE_CONTINUE_PENDING"
+    description="Service Mode: Continue Pending"
+    text="Continue Pending"/>
+
+  <string
+    id="SERVICE_DISABLED"
+    description="Service Object: Disabled"
+    text="Disabled"/>
+
+  <string
+    id="SERVICE_DRIVER"
+    description="Service Object: Driver"
+    text="Driver"/>
+
+  <string
+    id="SERVICE_ERROR_CRITICAL"
+    description="Service Object: Critical"
+    text="Critical"/>
+
+  <string
+    id="SERVICE_ERROR_IGNORE"
+    description="Service Object: Ignore"
+    text="Ignore"/>
+
+  <string
+    id="SERVICE_ERROR_NORMAL"
+    description="Service Object: Normal"
+    text="Normal"/>
+
+  <string
+    id="SERVICE_ERROR_SEVERE"
+    description="Service Object: Severe"
+    text="Severe"/>
+
+  <string
+    id="SERVICE_FILE_SYSTEM_DRIVER"
+    description="Service Object: File System"
+    text="File System"/>
+
+  <string
+    id="SERVICE_INTERACTIVE_PROCESS"
+    description="Service Object: Interactive Process"
+    text="Interactive"/>
+
+  <string
+    id="SERVICE_KERNEL_DRIVER"
+    description="Service Object: Kernel Driver"
+    text="Kernel"/>
+
+  <string
+    id="SERVICE_PAUSE_PENDING"
+    description="Service Object: Pause Pending"
+    text="Pause Pending"/>
+
+  <string
+    id="SERVICE_PAUSED"
+    description="Service Object: Paused"
+    text="Paused"/>
+
+  <string
+    id="SERVICE_RUNNING"
+    description="Service Object: Running"
+    text="Running"/>
+
+  <string
+    id="SERVICE_START_PENDING"
+    description="Service Object: Start pending"
+    text="Start pending"/>
+
+  <string
+    id="SERVICE_STOP_PENDING"
+    description="Service Object: Stop pending"
+    text="Stop pending"/>
+
+  <string
+    id="SERVICE_STOPPED"
+    description="Service Object: Stopped"
+    text=""/>
+
+  <string
+    id="SERVICE_WIN32"
+    description="Service Object: Win32"
+    text="Win32"/>
+
+  <string
+    id="SERVICE_WIN32_OWN_PROCESS"
+    description="Service Object: Win32 Own Process"
+    text="Standalone"/>
+
+  <string
+    id="SERVICE_WIN32_SHARE_PROCESS"
+    description="Service Object: Win32 Shared Process"
+    text="Shared"/>
+
+  <string
+    id="MainForm_Caption"
+    description="Main: Caption"
+    text="pserv {0}: {1}"/>
+  
+  <string
+    id="MainForm_SelectTemplateFile"
+    description="Main: Select template file"
+    text="Select template file"/>
+  
+  <string
+    id="MainForm_TemplateFileFilter"
+    description="Main: xml files (*.xml)|*.xml|All files (*.*)|*.*"
+    text="xml files (*.xml)|*.xml|All files (*.*)|*.*"/>
+
+  <!-- this is the configuration file that defines all strings available in a project. -->
+  <string
+    id="Menu_File"
+    description="Menu: File"
+    text="&amp;File"/>
+
+  <string
+    id="Menu_File_ConnectToLocalMachine"
+    description="Menu: File\Connect To Local Machine"
+    text="Connect to &amp;local machine"/>
+
+  <string
+    id="Menu_File_ConnectToRemoteMachine"
+    description="Menu: File\Connect To Remote Machine"
+    text="Connect to &amp;remote machine..."/>
+
+  <string
+    id="Menu_File_ApplyTemplate"
+    description="Menu: File"
+    text="&amp;Apply XML Template..."/>
+
+  <string
+    id="Menu_File_SaveAsXML"
+    description="Menu: File"
+    text="&amp;Save as XML"/>
+
+  <string
+    id="Menu_File_CopyToClipboard"
+    description="Menu: File"
+    text="Copy to clipboard..."/>
+
+  <string
+    id="Menu_File_Print"
+    description="Menu: File\Print"
+    text="&amp;Print..."/>
+
+  <string
+    id="Menu_File_PrintPreview"
+    description="Menu: File\Print Preview"
+    text="Print Pre&amp;view..."/>
+
+  <string
+    id="Menu_File_PageSetup"
+    description="Menu: File\Page Setup"
+    text="P&amp;age Setup..."/>
+
+  <string
+    id="Menu_File_Exit"
+    description="Menu: File\Exit"
+    text="E&amp;xit"/>
+
+  <string
+    id="Menu_Options"
+    description="Menu: Options"
+    text="&amp;Options"/>
+
+  <string
+    id="Menu_Options_ChooseColumns"
+    description="Menu: Options\Choose Columns"
+    text="Choose &amp;Columns..."/>
+
+  <string
+    id="Menu_Options_Font"
+    description="Menu: Options\Font"
+    text="&amp;Font..."/>
+
+
+  <string
+    id="Menu_View"
+    description="Menu: View"
+    text="&amp;View"/>
+
+  <string
+    id="Menu_View_Services"
+    description="Menu: View\Services"
+    text="&amp;Services"/>
+
+  <string
+    id="Menu_View_Devices"
+    description="Menu: View\Devices"
+    text="&amp;Devices"/>
+
+  <string
+    id="Menu_View_Windows"
+    description="Menu: View\Windows"
+    text="&amp;Windows"/>
+
+  <string
+    id="Menu_View_Uninstaller"
+    description="Menu: View\Uninstaller"
+    text="&amp;Uninstaller"/>
+
+  <string
+    id="Menu_View_SystemJournal"
+    description="Menu: View\System Journal"
+    text="&amp;System Journal"/>
+
+  <string
+    id="Menu_View_SecurityJournal"
+    description="Menu: View\Security Journal"
+    text="&amp;Security Journal"/>
+
+  <string
+    id="Menu_View_ApplicationJournal"
+    description="Menu: View\Application Journal"
+    text="&amp;Application Journal"/>
+
+  <string
+    id="Menu_View_Processes"
+    description="Menu: View\Processes"
+    text="&amp;Processes"/>
+
+  <string
+    id="Menu_View_Modules"
+    description="Menu: View Modules"
+    text="&amp;Modules"/>
+  
+  <string
+    id="Menu_View_Refresh"
+    description="Menu: View\Refresh"
+    text="&amp;Refresh"/>
+
+  <string
+    id="Menu_Help"
+    description="Menu: Help"
+    text="&amp;"/>
+
+  <string
+    id="Menu_Help_About"
+    description="Menu: Help\About"
+    text="&amp;About pserv3"/>
+
+  <string
+    id="Button_Services_Text"
+    description="Button: Services"
+    text="&amp;Services"/>
+  
+  <string
+    id="Button_Services_ToolTip"
+    description="Tooltip: Services"
+    text="Show all services"/>
+
+  <string
+    id="Button_Devices_Text"
+    description="Button: Devices"
+    text="&amp;Devices"/>
+
+  <string
+    id="Button_Devices_ToolTip"
+    description="Tooltip: Devices"
+    text="Show all devices"/>
+
+  <string
+    id="Button_Windows_Text"
+    description="Button: Windows"
+    text="&amp;Windows"/>
+
+  <string
+    id="Button_Windows_ToolTip"
+    description="Tooltip: Windows"
+    text="Show all desktop windows"/>
+
+  <string
+    id="Button_Uninstall_Text"
+    description="Button: Uninstall"
+    text="&amp;Uninstall"/>
+
+  <string
+    id="Button_Uninstall_ToolTip"
+    description="Tooltip: Uninstall"
+    text="Show uninstaller registry and keys"/>
+
+  <string
+    id="Button_Processes_Text"
+    description="Button: Processes"
+    text="&amp;Processes"/>
+
+  <string
+    id="Button_Processes_ToolTip"
+    description="Tooltip: Processes"
+    text="Show all runnin processes"/>
+
+  <string
+    id="Button_Modules_Text"
+    description="Button: Modules"
+    text="&amp;Modules"/>
+
+  <string
+    id="Button_Modules_ToolTip"
+    description="Tooltip: Modules"
+    text="Show all modules loaded in the system"/>
+
+  <string
+    id="Button_Item_Start"
+    description="Button: Start"
+    text="Start"/>
+
+  <string
+    id="Button_Item_Stop"
+    description="Button: Stop"
+    text="Stop"/>
+
+  <string
+    id="Button_Item_Restart"
+    description="Button: Restart"
+    text="Restart"/>
+
+  <string
+    id="Button_Item_Pause"
+    description="Button: Pause"
+    text="Pause"/>
+
+  <string
+    id="Button_Item_Continue"
+    description="Button: Continue"
+    text="Continue"/>
+
+  <string
+    id="Button_Filter"
+    description="Button: Filter"
+    text="Filter"/>
+
+  <string
+    id="Button_Properties_Text"
+    description="Button: Properties"
+    text="Properties"/>
+
+  <string
+    id="Button_Properties_ToolTip"
+    description="Tooltip: Properties"
+    text="Show properties of selected item"/>
+
+  <string
+    id="Button_Refresh_Text"
+    description="Button: Refresh"
+    text="&amp;Refresh"/>
+
+  <string
+    id="Button_Refresh_ToolTip"
+    description="Tooltip: Refresh"
+    text="Refresh current view"/>
+  
+  <!-- Windows: Column Types-->
+
+  <string
+    id="Windows_Column_Handle"
+    description="Windows Column: Handle"
+    text="Handle"/>
+
+  <string
+    id="Windows_Column_Title"
+    description="Windows Column: Title"
+    text="Title"/>
+
+  <string
+    id="Windows_Column_Class"
+    description="Windows Column: Class"
+    text="Class"/>
+
+  <string
+    id="Windows_Column_Style"
+    description="Windows Column: Style"
+    text="Style"/>
+
+  <string
+    id="Windows_Column_ExStyle"
+    description="Windows Column: ExStyle"
+    text="ExStyle"/>
+
+  <string
+    id="Windows_Column_ID"
+    description="Windows Column: ID"
+    text="ID"/>
+
+  <string
+    id="Windows_Column_Size"
+    description="Windows Column: Size"
+    text="Size"/>
+
+  <string
+    id="Windows_Column_Position"
+    description="Windows Column: Position"
+    text="Position"/>
+
+  <string
+    id="Windows_Column_PID"
+    description="Windows Column: PID"
+    text="PID"/>
+
+  <string
+    id="Windows_Column_TID"
+    description="Windows Column: TID"
+    text="TID"/>
+
+  <string
+    id="Windows_Column_Process"
+    description="Windows Column: Process"
+    text="Process"/>
+
+  
+  <!-- Uninstaller: Column Types-->
+
+  <string
+    id="Uninstaller_Column_Application"
+    description="Uninstaller Column: Application"
+    text="Application"/>
+
+  <string
+    id="Uninstaller_Column_Path"
+    description="Uninstaller Column: Path"
+    text="Path"/>
+
+  <string
+    id="Uninstaller_Column_Key"
+    description="Uninstaller Column: Key"
+    text="Key"/>
+
+  <string
+    id="Uninstaller_Column_Version"
+    description="Uninstaller Column: Version"
+    text="Version"/>
+
+  <string
+    id="Uninstaller_Column_Publisher"
+    description="Uninstaller Column: Publisher"
+    text="Publisher"/>
+
+  <string
+    id="Uninstaller_Column_HelpLink"
+    description="Uninstaller Column: HelpLink"
+    text="HelpLink"/>
+
+  <string
+    id="Uninstaller_Column_AboutLink"
+    description="Uninstaller Column: AboutLink"
+    text="AboutLink"/>
+
+  <string
+    id="Uninstaller_Column_Action"
+    description="Uninstaller Column: Action"
+    text="Action"/>
+
+  <!-- Services: Column Types-->
+
+  <string
+    id="Services_Column_DisplayName"
+    description="Services Column: DisplayName"
+    text="DisplayName"/>
+
+  <string
+    id="Services_Column_ServiceName"
+    description="Services Column: ServiceName"
+    text="ServiceName"/>
+
+  <string
+    id="Services_Column_Status"
+    description="Services Column: Status"
+    text="Status"/>
+
+  <string
+    id="Services_Column_Start"
+    description="Services Column: Start"
+    text="Start"/>
+
+  <string
+    id="Services_Column_Type"
+    description="Services Column: Type"
+    text="Type"/>
+
+  <string
+    id="Services_Column_Path"
+    description="Services Column: Path"
+    text="Path"/>
+
+  <string
+    id="Services_Column_PID"
+    description="Services Column: PID"
+    text="PID"/>
+
+  <string
+    id="Services_Column_User"
+    description="Services Column: User"
+    text="User"/>
+
+  <string
+    id="Services_Column_LoadOrderGroup"
+    description="Services Column: LoadOrderGroup"
+    text="LoadOrderGroup"/>
+
+  <string
+    id="Services_Column_ErrorControl"
+    description="Services Column: ErrorControl"
+    text="ErrorControl"/>
+
+  <string
+    id="Services_Column_TagId"
+    description="Services Column: TagId"
+    text="TagId"/>
+
+  <string
+    id="Services_Column_Dependencies"
+    description="Services Column: Dependencies"
+    text="Dependencies"/>
+
+  <string
+    id="Services_Column_Description"
+    description="Services Column: Description"
+    text="Description"/>
+
+  <!-- Modules: Column Types-->
+
+  <string
+    id="Modules_Column_ID"
+    description="Modules Column: ID"
+    text="ID"/>
+
+  <string
+    id="Modules_Column_Name"
+    description="Modules Column: Name"
+    text="Name"/>
+
+  <string
+    id="Modules_Column_Path"
+    description="Modules Column: Path"
+    text="Path"/>
+
+  <string
+    id="Modules_Column_ModuleMemorySize"
+    description="Modules Column: ModuleMemorySize"
+    text="Memory"/>
+
+  <string
+    id="Modules_Column_FileDescription"
+    description="Modules Column: FileDescription"
+    text="Description"/>
+
+  <string
+    id="Modules_Column_FileVersion"
+    description="Modules Column: FileVersion"
+    text="File Version"/>
+
+  <string
+    id="Modules_Column_Product"
+    description="Modules Column: Product"
+    text="Product"/>
+
+  <string
+    id="Modules_Column_ProductVersion"
+    description="Modules Column: ProductVersion"
+    text="Product Version"/>
+
+  <!-- Processes: Column Types-->
+  
+  <string
+    id="Processes_Column_ID"
+    description="Processes Column: ID"
+    text="ID"/>
+
+  <string
+    id="Processes_Column_Name"
+    description="Processes Column: Name"
+    text="Name"/>
+
+  <string
+    id="Processes_Column_Path"
+    description="Processes Column: Path"
+    text="Path"/>
+
+  <string
+    id="Processes_Column_User"
+    description="Processes Column: User"
+    text="User"/>
+
+  <string
+    id="Processes_Column_FileDescription"
+    description="Processes Column: FileDescription"
+    text="Description"/>
+
+  <string
+    id="Processes_Column_FileVersion"
+    description="Processes Column: FileVersion"
+    text="File Version"/>
+
+  <string
+    id="Processes_Column_Product"
+    description="Processes Column: Product"
+    text="Product"/>
+
+  <string
+    id="Processes_Column_ProductVersion"
+    description="Processes Column: ProductVersion"
+    text="Product Version"/>
+
+  <string
+    id="Processes_Column_SessionId"
+    description="Processes Column: SessionId"
+    text="Session"/>
+  
+  <string
+    id="Processes_Column_ThreadCount"
+    description="Processes Column: ThreadCount"
+    text="Thread Count"/>
+  
+  <string
+    id="Processes_Column_HandleCount"
+    description="Processes Column: HandleCount"
+    text="Handle Count"/>
+
+  <string
+    id="Processes_Column_MainWindowHandle"
+    description="Processes Column: MainWindowHandle"
+    text="Main Window Handle"/>
+
+  <string
+    id="Processes_Column_MainWindowTitle"
+    description="Processes Column: MainWindowTitle"
+    text="Main Window Title"/>
+
+  <string
+    id="Processes_Column_Responding"
+    description="Processes Column: Responding"
+    text="Responding"/>
+
+  <string
+    id="Processes_Column_StartTime"
+    description="Processes Column: StartTime"
+    text="Start Time"/>
+
+  <string
+    id="Processes_Column_TotalRunTime"
+    description="Processes Column: TotalRunTime"
+    text="Total Run Time"/>
+
+  <string
+    id="Processes_Column_TotalProcessorTime"
+    description="Processes Column: TotalProcessorTime"
+    text="Total Processor Time"/>
+
+  <string
+    id="Processes_Column_PrivilegedProcessorTime"
+    description="Processes Column: PrivilegedProcessorTime"
+    text="Privileged Processor Time"/>
+
+  <string
+    id="Processes_Column_ProcessPriorityClass"
+    description="Processes Column: ProcessPriorityClass"
+    text="Priority"/>
+
+  <string
+    id="Processes_Column_StartInfoArguments"
+    description="Processes Column: StartInfoArguments"
+    text="Start Arguments"/>
+
+  <string
+    id="Processes_Column_NonpagedSystemMemorySize64"
+    description="Processes Column: NonpagedSystemMemorySize64"
+    text="Nonpaged System Memory"/>
+
+  <string
+    id="Processes_Column_PagedMemorySize64"
+    description="Processes Column: PagedMemorySize64"
+    text="Paged Memory"/>
+
+  <string
+    id="Processes_Column_PagedSystemMemorySize64"
+    description="Processes Column: PagedSystemMemorySize64"
+    text="Paged System Memory"/>
+
+  <string
+    id="Processes_Column_PeakPagedMemorySize64"
+    description="Processes Column: PeakPagedMemorySize64"
+    text="Peak Paged Memory"/>
+
+  <string
+    id="Processes_Column_PeakVirtualMemorySize64"
+    description="Processes Column: PeakVirtualMemorySize64"
+    text="Peak Virtual Memory"/>
+
+  <string
+    id="Processes_Column_PeakWorkingSet64"
+    description="Processes Column: PeakWorkingSet64"
+    text="Peak Working Set"/>
+
+  <string
+    id="Processes_Column_PrivateMemorySize64"
+    description="Processes Column: PrivateMemorySize64"
+    text="Private Memory"/>
+
+  <string
+    id="Processes_Column_VirtualMemorySize64"
+    description="Processes Column: VirtualMemorySize64"
+    text="Virtual Memory"/>
+
+  <string
+    id="Processes_Column_WorkingSet64"
+    description="Processes Column: WorkingSet64"
+    text="Working Set"/>
+
+  <!-- EventJournal: Column Types-->
+  
+  <string
+    id="EventJournal_Column_Index"
+    description="EventJournal Column: Index"
+    text="Index"/>
+
+  <string
+    id="EventJournal_Column_TimeWritten"
+    description="EventJournal Column: TimeWritten"
+    text="Written"/>
+
+  <string
+    id="EventJournal_Column_Message"
+    description="EventJournal Column: Message"
+    text="Message"/>
+
+  <string
+    id="EventJournal_Column_ReplacementStrings"
+    description="EventJournal Column: ReplacementStrings"
+    text="ReplacementStrings"/>
+  
+  <string
+    id="EventJournal_Column_Category"
+    description="EventJournal Column: Category"
+    text="Category"/>
+  
+  <string
+    id="EventJournal_Column_EntryType"
+    description="EventJournal Column: EntryType"
+    text="EntryType"/>
+  
+  <string
+    id="EventJournal_Column_Source"
+    description="EventJournal Column: Source"
+    text="Source"/>
+  
+  <string
+    id="EventJournal_Column_Machine"
+    description="EventJournal Column: Machine"
+    text="Machine"/>
+
+  <string
+    id="EventJournal_Column_UserName"
+    description="EventJournal Column: UserName"
+    text="UserName"/>
+
+  <!-- Status Bar -->
+
+  <string
+    id="StatusBar_NumberOfVisibleItems"
+    description="Status Bar: Number of visible items"
+    text="{0} Visible"/>
+
+  <string
+    id="StatusBar_NumberOfActiveItems"
+    description="Status Bar: Number of active items"
+    text="{0} Active"/>
+
+  <string
+  id="StatusBar_NumberOfDisabledItems"
+  description="Status Bar: Number of disabled items"
+  text="{0} Disabled"/>
+
+  <string
+  id="StatusBar_NumberOfHiddenItems"
+  description="Status Bar: Number of hidden items"
+  text="{0} Hidden"/>
+
+  <string
+  id="StatusBar_NumberOfTotalItems"
+  description="Status Bar: Number of total items"
+  text="{0} Total"/>
+
+
+  <!-- Processes -->
+
+  <string
+    id="NativeAccount_SYSTEM"
+    description="Account: SYSTEM"
+    text="SYSTEM"/>
+
+  <string
+    id="NativeAccount_NETWORK_SERVICE"
+    description="Account: NETWORK SERVICE"
+    text="NETWORK SERVICE"/>
+
+  <string
+    id="NativeAccount_LOCAL_SERVICE"
+    description="Account: LOKALER DIENST"
+    text="LOCAL SERVICE"/>
+
+  <string
+    id="LocalizedAccount_SYSTEM"
+    description="Account: SYSTEM"
+    text="SYSTEM"/>
+
+  <string
+    id="LocalizedAccount_NETWORK_SERVICE"
+    description="Account: NETWORK SERVICE"
+    text="NETZWERKDIENST"/>
+
+  <string
+    id="LocalizedAccount_LOCAL_SERVICE"
+    description="Account: LOKALER DIENST"
+    text="LOKALER DIENST"/>
+
+  <!-- Dialog: ApplyServiceTemplate -->
+
+  <string
+    id="ApplyServiceTemplate_Dialog_Caption"
+    description="Dialog caption: Apply Template"
+    text="Apply Service Template"/>
+
+  <string
+    id="ApplyServiceTemplate_Column_Service"
+    description="List Column: Service name"
+    text="Service"/>
+
+  <string
+    id="ApplyServiceTemplate_Column_Action"
+    description="List Column: Action to perform (if any)"
+    text="Action"/>
+
+  <string
+    id="ApplyServiceTemplate_Button_OK"
+    description="Button: OK"
+    text="&amp;OK"/>
+
+  <string
+    id="ApplyServiceTemplate_Button_Cancel"
+    description="Button: Cancel"
+    text="&amp;Cancel"/>
+
+  <string
+    id="ApplyServiceTemplate_Label_ChooseDefaultAction"
+    description="Label: Choose default action"
+    text="Default Action:"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_NO_CHANGE"
+    description="Default action: do not apply any change"
+    text="No change"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_AUTO_START"
+    description="Default action: start automatically"
+    text="Start automatically"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_BOOT_START"
+    description="Default action: start at boot"
+    text="Start at boot"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_DEMAND_START"
+    description="Default action: start manually"
+    text="Start manually"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_DISABLED"
+    description="Default action: Disabled"
+    text="Start disabled"/>
+
+  <string
+    id="ApplyServiceTemplate_DefaultAction_SERVICE_SYSTEM_START"
+    description="Default action: start with operating system"
+    text="Start at system boot"/>
+  
+</strings>
+

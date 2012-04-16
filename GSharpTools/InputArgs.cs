@@ -65,7 +65,7 @@ namespace GSharpTools
             Options.Add(new InputArg(type, name, defaultvalue, presence, helpString));
         }
 
-        public bool Process(string[] args)
+        public bool Process(ref string[] args)
         {
             Console.WriteLine("{0} - {1}\r\n", AppName, Caption);
             
@@ -74,9 +74,9 @@ namespace GSharpTools
             ExpectedArg = null;
 
 
-            foreach (string arg in args)
+            for (int i = 0; i < args.Length; i++ )
             {
-                if (!CurrentArgMethod(arg))
+                if (!CurrentArgMethod(ref args[i]))
                     return false;
             }
 
@@ -86,7 +86,7 @@ namespace GSharpTools
             return true;
         }
 
-        private delegate bool ProcessArg(string arg);
+        private delegate bool ProcessArg(ref string arg);
 
         private bool MatchesOption(string arg, InputArg option)
         {
@@ -107,7 +107,7 @@ namespace GSharpTools
             return true;
         }
 
-        private bool DefaultProcessFunc(string arg)
+        private bool DefaultProcessFunc(ref string arg)
         {
             if (arg.StartsWith("/"))
             {
@@ -136,7 +136,7 @@ namespace GSharpTools
             return false;
         }
 
-        private bool ExpectParameter(string arg)
+        private bool ExpectParameter(ref string arg)
         {
             ExpectedArg.Value = arg;
             ExpectedArg.HasBeenSeen = true;
@@ -144,7 +144,7 @@ namespace GSharpTools
             return true;
         }
 
-        private bool ExpectStringList(string arg)
+        private bool ExpectStringList(ref string arg)
         {
             List<string> items = new List<string>();
             foreach (string s in arg.Split(';'))
@@ -157,10 +157,21 @@ namespace GSharpTools
             return true;
         }
 
-        private bool ExpectNewDirectory(string arg)
+        private bool ExpectNewDirectory(ref string arg)
         {
             ExpectedArg.Value = arg;
             ExpectedArg.HasBeenSeen = true;
+            /*
+             * If you use double quotes on a command line argument and end in a \ the string gets passed as
+             * ending in ". e.g if you issue the command [pathed /add "c:\program files\foo\"], the last 
+             * argument gets passed as [c:\program files\foo"]. This is because windows tries to be forgiving
+             * about spaces, but the '\' escapes a double quote.
+             */
+            if (arg.EndsWith("\""))
+                arg = arg.Remove(arg.LastIndexOf('"'));
+            // Its just a waste of a character in your path.
+            if (arg.EndsWith("\\"))
+                arg = arg.Remove(arg.LastIndexOf('\\'));
             if (!Directory.Exists(arg))
             {
                 Console.WriteLine("ERROR, argument {0} must specify an existing directory, '{1}' does not exist.", ExpectedArg.Name, arg);

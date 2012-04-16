@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security;
 using GSharpTools;
 using System.Text;
 using System.IO;
@@ -45,7 +46,7 @@ namespace pathed
             Args.Add(InputArgType.Flag, "slim", false, Presence.Optional, "strip duplicate vars");
             Args.Add(InputArgType.Parameter, "env", "PATH", Presence.Optional, "environment variable, defaults to PATH");
 
-            if (Args.Process(args))
+            if (Args.Process(ref args))
             {
                 EnvironmentVariableName = Args.GetString("env");
 
@@ -58,17 +59,26 @@ namespace pathed
                 else if (Args.GetFlag("user"))
                     EnvironmentVariableTarget = EnvironmentVariableTarget.User;
 
-                List<string> removeItems = Args.GetStringList("remove");
-                if (removeItems != null)
-                    Remove(removeItems);
+                try
+                {
+                    List<string> removeItems = Args.GetStringList("remove");
+                    if (removeItems != null)
+                        Remove(removeItems);
 
-                string add = Args.GetString("add");
-                if (!string.IsNullOrEmpty(add))
-                    AddHead(add);
+                    string add = Args.GetString("add");
+                    if (!string.IsNullOrEmpty(add))
+                        AddHead(add);
 
-                string append = Args.GetString("append");
-                if (!string.IsNullOrEmpty(append))
-                    AddTail(append);
+                    string append = Args.GetString("append");
+                    if (!string.IsNullOrEmpty(append))
+                        AddTail(append);
+                }
+                catch (SecurityException ex)
+                {
+                    if (EnvironmentVariableTarget == EnvironmentVariableTarget.Machine)
+                        Console.WriteLine("ERROR, cannot manipulate the machine environment variables. {0}", ex.Message);
+                    else throw;
+                }
 
                 ListPath();
             }

@@ -55,7 +55,7 @@ namespace md5sums
             Args.Add(InputArgType.Flag, "recursive", false, Presence.Optional, "search directories recursively");
             Args.Add(InputArgType.RemainingParameters, "DIR {DIR}", null, Presence.Optional, "one or more directories to search");
 
-            if (Args.Process(args))
+            if (Args.Process(ref args))
             {
                 Recursive = Args.GetFlag("recursive");
 

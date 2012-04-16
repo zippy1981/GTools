@@ -42,7 +42,7 @@ namespace Which
             Args.Add(InputArgType.RemainingParameters, "FILE {FILE}", null, Presence.Required, "one or more files to find");
             Args.Add(InputArgType.Parameter, "env", "PATH", Presence.Optional, "environment variable, defaults to PATH");
 
-            if (Args.Process(args))
+            if (Args.Process(ref args))
             {
                 Filenames = Args.GetStringList("FILE {FILE}");
                 Directories = Args.FindOrCreateStringList("dir");

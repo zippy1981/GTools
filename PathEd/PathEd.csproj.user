@@ -10,4 +10,7 @@
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>/machine /add "C:\Program Files\Microsoft SQL Server\110\Tools\Binn\"</StartArguments>
+  </PropertyGroup>
 </Project>

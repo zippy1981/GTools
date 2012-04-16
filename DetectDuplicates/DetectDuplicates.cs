@@ -82,7 +82,7 @@ namespace DetectDuplicates
             Args.Add(InputArgType.Flag, "delete", false, Presence.Optional, "delete files (default: list only)");
             Args.Add(InputArgType.RemainingParameters, "DIR {DIR}", null, Presence.Required, "one or more directories to search");
 
-            if (Args.Process(args))
+            if (Args.Process(ref args))
             {
                 DatabaseCache.Initialize(Args.GetString("cache"), Cache);
                 Recursive = Args.GetFlag("recursive");
